@@ -5,6 +5,7 @@ class CyrusSaslXoauth2 < Formula
   license "MIT"
   url "https://github.com/moriyoshi/cyrus-sasl-xoauth2/archive/refs/tags/v0.2.tar.gz"
   head "https://github.com/moriyoshi/cyrus-sasl-xoauth2.git"
+  sha256 "a62c26566098100d30aa254e4c1aa4309876b470f139e1019bb9032b6e2ee943"
 
   depends_on "cyrus-sasl"
   depends_on "gnu-sed" => :build

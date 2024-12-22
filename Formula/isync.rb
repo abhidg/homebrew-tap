@@ -12,8 +12,8 @@ class Isync < Formula
   end
 
   depends_on "berkeley-db@5"
-  depends_on "openssl@3"
   depends_on "cyrus-sasl"
+  depends_on "openssl@3"
 
   uses_from_macos "zlib"
 
@@ -32,8 +32,8 @@ class Isync < Formula
     interval 300
     keep_alive false
     environment_variables PATH: std_service_path_env
-    log_path "/dev/null"
-    error_log_path "/dev/null"
+    log_path File::NULL
+    error_log_path File::NULL
   end
 
   test do
